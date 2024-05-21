@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Amazon Sign In</title>
+        <link rel="stylesheet" href="./style2.css" />
+        <link rel="shortcut icon" href="./images/amazon-favicon.png" type="image/x-icon">
+    </head>
+    <body>
+        <div class="signInPage">
+        
+        <div class="signInPage">
+            <a href="index.html"><img
+                src="./images/Amazon-Logo-black.png"
+                width="150px"
+                height="100px"
+                class="amazonLogo"
+            /></a>
+
+            <div class="sign-in-box">
+                <h2>Sign in</h2>
+                <label for="username">Email or mobile phone number</label>
+                <input type="text" id="emailLog" />
+                <button>Continue</button>
+                <small
+                    >By continuing, you agree to Amazon's
+                    <span class="hover">Conditions of Use</span> and
+                    <span class="hover">Privacy Notice.</span></small
+                >
+
+                <details class="needHelp">
+                    <!-- <img
+                        src="./images/right-arrow.png"
+                        width="8px"
+                        height="8px"
+                    /> -->
+                    <summary class="hover">Need Help?</summary>
+                    <a href="forgetAssistence.html" style="text-decoration: none; color: blue; margin-left: 10px;" ><p class="hover">Forget password</p></a>
+                    <a href="#" style="text-decoration: none; color: blue; margin-left: 10px;" ><p class="hover">Other issue with Sign-in</p></a>
+                </details>
+                
+            </div>
+
+            <div class="newToAmz">
+                <div
+                    style="
+                        width: 110px;
+                        height: 1px;
+                        background-color: rgb(222, 219, 219);
+                    "
+                ></div>
+                <small>New to Amazon?</small>
+                <div
+                    style="
+                        width: 110px;
+                        height: 1px;
+                        background-color: rgb(231, 230, 230);
+                    "
+                ></div>
+            </div>
+            <a href="sign-up.html">
+
+                <button class="create-account" id="create-account-btn">Create Your Amazon Account</button>
+            </a>
+            
+            </div>
+
+        <div class="copyright">
+            <div>
+                <span>Conditions of Use</span>
+                <span>Privacy Notice</span>
+                <span>Help</span>
+            </div>
+            <small style="font-size: 12px; color: rgb(64, 63, 63)"
+                >© 1996-2023, Amazon.com, Inc. or its affiliates</small
+            >
+        </div>
+        </div>
+
+        
+        <!-- Overlay -->
+        <div class="overlay" onclick="closeSideBar()"></div>
+
+        <script src="script2.js"></script>
+    </body>
+</html>

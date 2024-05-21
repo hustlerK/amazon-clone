@@ -1,0 +1,871 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: rgb(216, 215, 215);
+    scroll-behavior: smooth;
+}
+
+.page-container {
+    position: relative;
+    width: 100vw;
+}
+
+.nav-bar {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    height: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    background-color: rgb(20, 19, 19);
+    z-index: 9999;
+}
+.border:hover {
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 4px;
+}
+.updateAddress {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.6em;
+}
+
+.search-bar {
+    display: flex;
+    width: 700px;
+    height: 45px;
+    border-radius: 5px;
+    border-radius: 8px;
+    background-color: #fff;
+    z-index: 10;
+}
+.search-bar input {
+    all: unset;
+    width: 590px;
+    font-size: 20px;
+    padding-left: 0.8em;
+    background-color: white;
+    color: black;
+
+}
+.search-bar img {
+    cursor: pointer;
+    padding: 5px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    height: 100%;
+}
+#selectCategories {
+    border: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    height: 100%;
+    cursor: pointer;
+    background-color: rgb(231, 229, 229);
+    color: black;
+}
+overlay
+#selectCategories option {
+    background-color: white;
+    font-size: 16px;
+}
+
+.right-side {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.select-language {
+    display: flex;
+    gap: 0.4rem;
+}
+.select-language {
+    padding: 10px;
+    position: relative;
+}
+
+.chooseLanguage {
+    display: none;
+    flex-direction: column;
+    width: 280px;
+    padding: 25px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px rgb(188, 186, 186);
+    position: absolute;
+    bottom: -380px;
+    left: 0;
+    gap: 0.4rem;
+    color: black;
+    z-index: 99999;
+}
+.select-language:hover > .chooseLanguage,
+.sign-in:hover > .signinOpt {
+    display: flex;
+}
+
+.underline:hover > label {
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(236, 187, 12);
+}
+.underline:hover > link {
+    color: blue;
+    text-decoration: underline;
+    text-decoration-color: rgb(236, 187, 12);
+}
+.signinOpt {
+    position: absolute;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    width: 500px;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px rgb(187, 187, 187);
+    padding: 16px;
+    color: black;
+    border-radius: 8px;
+    z-index: 99999;
+    cursor: auto;
+}
+.signinOpt li {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+}
+
+.signhead {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    justify-content: center;
+    align-items: center;
+}
+.signhead button {
+    width: 200px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.signhead button:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(128, 30, 30);
+}
+.signhead span {
+    color: blue;
+    cursor: pointer;
+}
+.signhead span:hover {
+    color: rgb(255, 121, 3);
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 163, 3);
+}
+.signin-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 18px;
+}
+.content li {
+    font-size: small;
+    line-height: 1.4;
+}
+.content li:hover {
+    color: rgb(236, 187, 12);
+    text-decoration: underline;
+    text-decoration-color: rgb(236, 187, 12);
+    cursor: pointer;
+}
+
+.secondNav {
+    display: flex;
+    flex-direction: row;
+    /* padding: 5px; */
+    height: 45px;
+    background-color: rgb(27, 27, 51);
+    color: white;
+}
+li {
+    all: unset;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+}
+.primeImg {
+    width: 330px;
+    height: 330px;
+    padding: 25px;
+    box-shadow: 1px 1px 50px gray;
+    border-radius:8px;
+    position: absolute;
+    background-color: #fff;
+    bottom: -330px;
+    left: -100px;
+    scale: 0;
+    z-index: 9999;
+}
+.prime:hover > .primeImg {
+    scale: 1;
+}
+.secondNavFirst li:hover {
+    border: 1px solid white;
+}
+.secondNavFirst ul {
+    all: unset;
+    display: flex;
+    gap: 15px;
+}
+#sideMenu {
+    display: flex;
+    gap: 10px;
+    /* scale: 0; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: #fff;
+    flex-direction: column;
+    gap: 10px;
+    left: -320px;
+    transition: 0.5s ease;
+
+    
+}
+
+#sideMenu.active {
+    /* scale: 1; */
+    left: 0;
+    transition: 0.5s ease;
+    /* transition-property: all; */
+}
+
+.sideMenuhead {
+    display: flex;
+    gap: 10px;
+    background-color: rgb(27, 27, 51);
+    color: white;
+    padding-left: 40px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#sideMenu span {
+    display: flex;
+    gap: 15px;
+}
+#sideMenu div div {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    padding-left: 30px;
+    font-size: 14px;
+}
+#sideMenu div div:hover {
+    background-color: rgb(222, 220, 220);
+    cursor: pointer;
+}
+
+.sideContent {
+    display: flex;
+    flex-direction: column;
+}
+.sideContent p {
+    padding: 10px;
+    padding-left: 30px;
+    font-size: 14px;
+}
+.sideContent p:hover {
+    cursor: pointer;
+    background-color: rgb(240, 240, 240);
+}
+.overlay {
+    position: absolute;
+    background-color: #5f5f5f83;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.overlayactive {
+    opacity: 1;
+    pointer-events: initial;
+}
+.active {
+    scale: 1;
+}
+
+.heroSection {
+    position: relative;
+    width: 100vw;
+    height: 92vh;
+    overflow-x: auto;
+    position: sticky;
+    left: 0;
+    transition: 2s;
+}
+
+.hero-section-bg {
+    width: 100%;
+    height: 92vh;
+    display: flex;
+    overflow-x: auto;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+.hero-section-bg > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+    position: sticky;
+    left: 0;
+}
+
+.scroll-hero-section {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    z-index: 1;
+}
+.hero-section-btn {
+    height: 90%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+.hero-section-btn img {
+    width: 50px;
+    height: 60px;
+    z-index: 99;
+}
+
+
+.GridBoxes {
+    width: 100%;
+    position: absolute;
+    bottom: 2px;
+    display: flex;
+    justify-content: space-evenly;
+    /* background: linear-gradient(rgb(230, 190, 190), rgb(178, 178, 217), rgb(204, 200, 200), rgb(210, 210, 184)); */
+    backdrop-filter: blur(100px);
+
+}
+
+.heroBox {
+    width: 340px;
+    height: 380px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 4px 100px rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 25px;
+}
+.heroboximgage {
+    display: grid;
+    grid-template-columns: repeat(2, .8fr);
+    grid-template-rows: repeat(2, .8fr);
+    gap: 10px;
+}
+
+.heroBoxImg {
+    cursor: pointer;
+}
+.heroBoxImg figcaption{
+    color: #464545;
+}
+.seeAllOffers {
+    font-size: 13px;
+    color: rgb(37, 120, 227);
+}
+.seeAllOffers:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(238, 143, 18);
+}
+
+.secondGridBoxes {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.scrollGrid {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    width: 91.5rem;
+    gap: 10px;
+}
+.navigationBtn:nth-child(1) {
+    position: absolute;
+    left: 0;
+    top: 35%;
+    cursor: pointer;
+    padding: 40px 15px;
+    background-color: #acacac;
+}
+.navigationBtn:nth-child(2) {
+    position: absolute;
+    right: 0;
+    top: 35%;
+    cursor: pointer;
+    padding: 40px 15px;
+    background-color: #acacac;
+}
+.gridHeading {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.gridImg {
+    background-color: rgb(236, 234, 234);
+    padding: 15px; 
+    border-radius: 5px; 
+    margin-bottom: 10px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+}
+.gridContainer {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+.gridContainer::-webkit-scrollbar {
+    display: none;
+}
+.gridCard {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.gridButton{
+    border: none; 
+    background-color: rgb(255, 33, 33); 
+    padding: 8px; 
+    border-radius: 5px; 
+    color: white;
+    cursor: pointer;
+}
+
+.scrollBtn:nth-child(1) {
+    position: absolute;
+    left: -100px;
+    top: 40%;
+    padding: 40px 15px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.scrollBtn:nth-child(2) {
+    position: absolute;
+    right: -80px;
+    top: 40%;
+    padding: 40px 15px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+
+.scrollBtn:nth-child(1).active {
+    left: 0;
+}
+.scrollBtn:nth-child(2).active {
+    right: 0;
+}
+
+.secondscrollBtn:nth-child(1) {
+    position: absolute;
+    left: -100px;
+    top: 40%;
+    padding: 40px 15px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.secondscrollBtn:nth-child(2) {
+    position: absolute;
+    right: -80px;
+    top: 40%;
+    padding: 40px 15px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.secondscrollBtn:nth-child(1).active {
+    left: 0;
+}
+.secondscrollBtn:nth-child(2).active {
+    right: 0;
+}
+
+.trainTKT {
+    width: 91.5rem;
+    margin: auto;
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+}
+
+.thirdscrollBtn:nth-child(1) {
+    position: absolute;
+    left: -100px;
+    top: 40%;
+    padding: 40px 15px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.thirdscrollBtn:nth-child(2) {
+    position: absolute;
+    right: -80px;
+    top: 40%;
+    padding: 40px 15px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.thirdscrollBtn:nth-child(1).active {
+    left: 0;
+}
+.thirdscrollBtn:nth-child(2).active {
+    right: 0;
+}
+
+.fourthscrollBtn:nth-child(1) {
+    position: absolute;
+    left: -100px;
+    top: 40%;
+    padding: 40px 15px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.fourthscrollBtn:nth-child(2) {
+    position: absolute;
+    right: -80px;
+    top: 40%;
+    padding: 40px 15px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.fourthscrollBtn:nth-child(1).active {
+    left: 0;
+}
+.fourthscrollBtn:nth-child(2).active {
+    right: 0;
+}
+
+.bottomSign {
+    width: 100vw;
+    height: 150px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    margin-top: 8px;
+}
+
+.backToTop {
+    width: 100vw;
+    background-color: rgb(47, 57, 74);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    transition: 0.5s;
+}
+.backToTop:hover {
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: rgb(65, 76, 97);
+}
+
+.footer {
+    width: 100vw;
+    height: 400px;
+    background-color: rgb(29, 40, 61);
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 40px;
+    color: white;
+}
+.footerDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footerDiv span {
+    color: rgb(228, 225, 225);
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+.footerDiv span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    
+}
+
+.salesArea {
+    width: 100vw;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(29, 40, 61);
+    padding: 30px;
+    justify-content: space-between;
+    border-top: 1px solid rgb(61, 61, 83);
+}
+
+.logo-section {
+    display: flex;
+    gap: 60px;
+}
+
+.languageSection {
+    position: relative;
+    display: flex;
+    width: 150px;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.languageSection:hover  .footerLanguage {
+    display: flex;
+}
+
+.SalesContinent {
+    display: flex;
+    width: 1000px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+
+.SalesContinent p {
+    font-weight: thin;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.SalesContinent p:hover {
+    text-decoration: underline;
+}
+
+.footerLanguage {
+    display: none;
+    flex-direction: column;
+    width: 280px;
+    padding: 25px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 1px 1px 2px rgb(28, 38, 58);
+    position: absolute;
+    top: 45px;
+    left: 0;
+    gap: 0.4rem;
+    color: black;
+    z-index: 9;
+}
+
+.Amazon-Brands {
+    width: 100vw;
+    height: 240px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(21, 25, 34);
+    justify-content: space-between;
+}
+
+.brands-container {
+    width: 60vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.brands-container div {
+    color: rgb(179, 176, 176);
+    font-size: 14px;
+    font-weight: thin;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.brands-container div:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.brands-container div p {
+    color: #837e7e;
+}
+.copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    font-size: 12px;
+}
+
+.copyright div {
+    display: flex;
+    gap: 30px;
+}
+
+.copyright div p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.updateAddresses {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 240px;
+    background-color: #fff;
+    border-radius: 8px;
+    z-index: 9999;
+    scale: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.updateAddresses.active {
+    scale: 1;
+}
+
+.updateHeading {
+    height: 50px;
+    background-color: rgb(233, 231, 231);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.addDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.addBtn {
+    width: 100%;
+    border: none;
+    background-color: rgb(246, 220, 25);
+    border-radius: 8px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.addBtn:hover {
+    cursor: pointer;
+    background-color: rgb(246, 202, 25);
+}
+.AddInput {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.AddInput input{
+    all: unset;
+    background-color: #fff;
+    padding: 5px;
+    width: 250px;
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+    border: 1px solid rgb(173, 171, 171);
+    
+}
+
+.AddInput input.active {
+    box-shadow: 0.5px 0.5px  4px green;
+}
+
+.AddInput button {
+    border: none;
+    padding: 7px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 1px 1px 4px rgb(184, 183, 183);
+    background-color: #fff;
+}
+
+.Echo-Elexa {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    background-color: white;
+    display: none;
+    flex-direction: column;
+}
+.Echo-Elexa-content {
+    display: flex;
+    flex-direction: column;
+}

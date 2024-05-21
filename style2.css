@@ -1,0 +1,200 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.signInPage {
+    width: 350px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.amazonLogo {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: -20px;
+}
+.sign-in-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid rgb(182, 180, 180);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: -10px;
+}
+.sign-in-box h2 {
+    font-weight: bolder;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.sign-in-box label {
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.sign-in-box input {
+
+    border: 1px solid rgb(182, 180, 180);
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.sign-in-box input.active {
+    box-shadow: 0.5px 0.5px  4px green;
+}
+.sign-in-box button {
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(246, 220, 25);
+    padding: 10px;
+    transition: 0.3s;
+}
+.sign-in-box button:hover {
+    cursor: pointer;
+    background-color: rgb(246, 202, 25);
+}
+
+.sign-in-box small span{
+    color: blue;
+}
+
+.needHelp {
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    color: blue;
+    font-size: 12px;
+    line-height: 25px;
+    font-weight: lighter;
+}
+.hover:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(238, 143, 18);
+}
+
+.newToAmz {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    color: rgb(141, 141, 141);
+}
+
+.create-account {
+    margin-top: 10px;
+    border: 1px solid rgb(168, 165, 165);
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 13px;
+    cursor: pointer;
+    width: 100%;
+    
+}
+.copyright {
+    display: grid;
+    place-items: center;
+    margin-top: 30px;
+    /* width: 90vw; */
+    border-top: 1px solid rgb(240, 238, 238);
+    gap: 5px;
+    overflow-x: hidden;
+}
+.copyright span {
+    font-size:12px;
+    color: blue;
+}
+.copyright span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(238, 143, 18);
+}
+
+
+.copyright div{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.sign-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -15px;
+}
+
+
+.sign-up form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    border: 1px solid rgb(213, 210, 210);
+    padding: 20px;
+    border-radius: 8px;
+    gap: 15px;
+    margin-top: -15px;
+}
+
+.sign-up form div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.sign-up form div label {
+    font-size: 12px;
+    font-weight: bold;
+}
+.sign-up form div input {
+    padding: 7px;
+    border: 1px solid rgb(214, 210, 210);
+    border-radius: 4px;
+}
+
+.sign-up form button {
+    border: none;
+    padding: 8px;
+    background-color: rgb(246, 220, 25);
+    border-radius: 4px;
+}
+
+.sign-up form button:hover {
+    cursor: pointer;
+    background-color: rgb(246, 202, 25);
+}
+
+.sign-up form small {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.sign-up form span{
+    color: blue;
+}
+.sign-up form span:hover {
+    cursor: pointer;
+    color: rgb(238, 143, 18);
+    text-decoration: underline;
+}
+
+.busines-account {
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid rgb(236, 232, 232);
+    border-bottom: 1px solid rgb(236, 232, 232);
+    margin-bottom: 10px;
+}
+
+.busines-account h5 {
+    font-weight: bold;
+}

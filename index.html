@@ -1,0 +1,2256 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Online Shopping site in india: Shop for Mobile, watches</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            rel="shortcut icon"
+            href="./images/amazon-favicon.png"
+            type="image/x-icon"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        />
+    </head>
+    <body onload="setTimeInterval()">
+        <div class="page-container">
+            <div class="nav-bar" id="top">
+                <img
+                    src="./images/Amazon-Logo.png"
+                    width="120px"
+                    height="40px"
+                    class="amazonLogo border"
+                />
+                <div class="address border" id="address">
+                    <small style="color: rgb(194, 191, 191); font-size: 14px"
+                        >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Delivery
+                        to Noida 110091</small
+                    >
+                    <div class="updateAddress">
+                        <img src="./images/location.png" width="25px" />
+                        <p>Update Location</p>
+                    </div>
+                </div>
+                <div class="search-bar">
+                    <div>
+                        <select name="Categories" id="selectCategories">
+                            <option value="">All</option>
+                            <option value="">All categories</option>
+                            <option value="">Alexa Skills</option>
+                            <option value="">Amazon Devices</option>
+                            <option value="">Amazon Fashion</option>
+                            <option value="">Amazon Fresh</option>
+                            <option value="">Amazon Pharmacy</option>
+                            <option value="">Appliances</option>
+                            <option value="">Apps & Games</option>
+                            <option value="">Audible Audiobooks</option>
+                            <option value="">Baby</option>
+                            <option value="">Beauty</option>
+                            <option value="">Books</option>
+                            <option value="">Cars & Motorbike</option>
+                            <option value="">Clothing & Accessories</option>
+                            <option value="">collectibles</option>
+                            <option value="">Computer & Accessories</option>
+                            <option value="">Electronics</option>
+                            <option value="">Furniture</option>
+                            <option value="">Garden and Outdoors</option>
+                            <option value="">Gift Cards</option>
+                            <option value="">Grocery & Gourmet Foods</option>
+                            <option value="">Health & Personal Care</option>
+                            <option value="">Home & Kitchen</option>
+                            <option value="">Industrial & Scientific</option>
+                            <option value="">Jewellery</option>
+                            <option value="">Kindle Store</option>
+                            <option value="">Luggage & Bags</option>
+                            <option value="">Luxary Beauty</option>
+                            <option value="">Movie & TV Shows</option>
+                            <option value="">Music</option>
+                            <option value="">Musical Instruments</option>
+                            <option value="">Office Products</option>
+                            <option value="">Pet Supplies</option>
+                            <option value="">Prime Video</option>
+                            <option value="">Shoes & Handbags</option>
+                            <option value="">Software</option>
+                            <option value="">Sports, Fitness & Outdoors</option>
+                            <option value="">Subscribe & Save</option>
+                            <option value="">Tools & Home improvement</option>
+                            <option value="">toys & Games</option>
+                            <option value="">Under ₹500</option>
+                            <option value="">Video Games</option>
+                            <option value="">Watches</option>
+                        </select>
+                    </div>
+                    <input
+                        type="text"
+                        placeholder="Search Amazon.com"
+                        onclick="openOverLay()"
+                    />
+                    <img
+                        src="./images/searchIcon.png"
+                        width="50px"
+                        height="100%"
+                        style="background-color: rgb(225, 185, 25)"
+                    />
+                </div>
+
+                <div class="right-side">
+                    <div class="select-language border">
+                        <img src="./images/flag.png" width="25px" />
+                        <p>
+                            EN
+                            <span style="font-size: 8px; color: gray">▼</span>
+                        </p>
+                        <!-- <img src="./images/dropDown.png" width="20px"> -->
+                        <!-- Choose Language -->
+                        <div class="chooseLanguage">
+                            <div class="underline">
+                                <input
+                                    type="radio"
+                                    name="chooseLanguage"
+                                    id="en"
+                                />
+                                <label for="en">English - EN</label>
+                            </div>
+                            <hr />
+                            <div class="underline">
+                                <input
+                                    type="radio"
+                                    name="chooseLanguage"
+                                    id="hi"
+                                />
+                                <label for="hi">हिन्दी - HI</label>
+                            </div>
+                            <div class="underline">
+                                <input
+                                    type="radio"
+                                    name="chooseLanguage"
+                                    id="ta"
+                                />
+                                <label for="ta">தமிழ் - TA </label>
+                            </div>
+                            <div class="underline">
+                                <input
+                                    type="radio"
+                                    name="chooseLanguage"
+                                    id="te"
+                                />
+                                <label for="te">తెలుగు - TE</label>
+                            </div>
+                            <div class="underline">
+                                <input
+                                    type="radio"
+                                    name="chooseLanguage"
+                                    id="kn"
+                                />
+                                <label for="kn">ಕನ್ನಡ - KN</label>
+                            </div>
+                            <div class="underline">
+                                <input
+                                    type="radio"
+                                    name="chooseLanguage"
+                                    id="ml"
+                                />
+                                <label for="ml">മലയാളം - ML</label>
+                            </div>
+                            <div class="underline">
+                                <input
+                                    type="radio"
+                                    name="chooseLanguage"
+                                    id="bn"
+                                />
+                                <label for="bn">বাংলা - BN</label>
+                            </div>
+                            <div class="underline">
+                                <input
+                                    type="radio"
+                                    name="chooseLanguage"
+                                    id="mr"
+                                />
+                                <label for="mr">मराठी - MR</label>
+                            </div>
+
+                            &nbsp;
+                            <div class="underline" style="color: blue">
+                                <label class="link">Learn More</label>
+                            </div>
+
+                            <hr />
+                            <div
+                                style="
+                                    display: flex;
+                                    gap: 5px;
+                                    align-items: center;
+                                "
+                            >
+                                <img
+                                    src="./images/flag.png"
+                                    width="12px"
+                                    height="12px"
+                                />
+                                <small>You are shopping on Amazon.in</small>
+                            </div>
+                            <div class="underline" style="color: blue">
+                                <label class="link"
+                                    >Change Country/region</label
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sign-in border">
+                        <a href="amazonsignin.html" style="all: unset">
+                            <small>Hello, Sign In</small>
+                            <div>
+                                <b
+                                    >Account & Lists
+                                    <span style="font-size: 8px; color: gray"
+                                        >▼</span
+                                    ></b
+                                >
+                                <!-- <img src="./images/dropDown.png" width="20px" class="dropDownIcon"> -->
+                            </div>
+                        </a>
+
+                        <!-- Sign in option -->
+                        <div class="signinOpt">
+                            <div class="signhead">
+                                <a href="amazonsignin.html" style="all: unset"
+                                    ><button>Sign in</button></a
+                                >
+                                <small
+                                    >New Cusotmer?&nbsp;<a href="sign-up.html"
+                                        style="all: unset;"><span>Start here.</span></a
+                                    ></small
+                                >
+                            </div>
+                            <hr />
+                            <div class="signin-content">
+                                <div class="content">
+                                    <h3>Your List</h3>
+                                    <ul>
+                                        <li>Create a Wish List</li>
+                                        <li>Wish from Any Website</li>
+                                        <li>Baby Wish List</li>
+                                        <li>Discover Your Style</li>
+                                        <li>Explore Showroom</li>
+                                    </ul>
+                                </div>
+                                <hr />
+                                <div class="content">
+                                    <h3>Your account</h3>
+                                    <ul>
+                                        <li>Your account</li>
+                                        <li>Your Orders</li>
+                                        <li>Your Wish List</li>
+                                        <li>Your Recommendations</li>
+                                        <li>Your Prime Membership</li>
+                                        <li>Your Prime Video</li>
+                                        <li>Your Subscribe & save items</li>
+                                        <li>Your Subscribe & save items</li>
+                                        <li>Your Subscribe & save items</li>
+                                        <li>Your Subscribe & save items</li>
+                                        <li>Your Subscribe & save items</li>
+                                        <li>Your Subscribe & save items</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="return-order border">
+                        <a href="amazonsignin.html" style="all: unset;"><small>Returns <br /></small>
+                        <b>& Orders</b></a>
+                    </div>
+
+                    <div class="cart-container border">
+                        <p style="padding: 10px">
+                            Cart <sup><small>0</small></sup>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second navigation bar -->
+            <div class="secondNav">
+                <div class="secondNavFirst">
+                    <ul>
+                        <li
+                            onclick="openSideBar()"
+                            style="display: flex; align-items: center; gap: 5px"
+                        >
+                            <img src="./images/menu (2).png" width="20px" />
+                            <span>All</span>
+                        </li>
+                        <li>Amazon miniTV</li>
+                        <li>Sell</li>
+                        <li>Best Sellers</li>
+                        <li>today's Deals</li>
+                        <li>Mobiles</li>
+                        <li>Customer service</li>
+                        <li class="prime">
+                            Prime
+                            <span style="font-size: 8px; color: gray">▼</span>
+                            <div class="primeImg">
+                                <img src="./images/prime.jpg" width="280px" />
+                            </div>
+                        </li>
+                        <li>New Releases</li>
+                        <li>Home & Kitchen</li>
+                        <li>Gift Ideas</li>
+                    </ul>
+                </div>
+                <img src="" alt="" />
+            </div>
+
+            <!-- Menu -->
+            <div id="sideMenu">
+                <!-- <div class="sideMenu"> -->
+                <div class="sideMenuhead">
+                    <span>
+                        <img
+                            src="./images/signin.png"
+                            width="25px"
+                            style="
+                                color: white;
+                                border-radius: 50%;
+                                margin-left: 20px;
+                            "
+                        />
+                        <h2>Hello, Sign in</h2>
+                    </span>
+                    <img
+                        src="https://static.vecteezy.com/system/resources/previews/021/815/794/original/cross-close-icon-free-png.png"
+                        width="20px"
+                        height="20px"
+                        onclick="closeSideBar()"
+                        style="cursor: pointer"
+                    />
+                </div>
+
+                <div class="sideContent">
+                    <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Trending</h3>
+                    <p>Best Sellers</p>
+                    <p>New Releases</p>
+                    <p>Movers and Shakers</p>
+                </div>
+
+                <hr />
+
+                <div>
+                    <h3>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Digital Content And
+                        Devices
+                    </h3>
+                    &nbsp;
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Amazon miniTV - FREE
+                        Entertainment
+                    </p>
+                    &nbsp;&nbsp;
+                    <div>
+                        <p>Echo & Alexa</p>
+                        <i style="font-size: 18px">></i>
+                    </div>
+                    <div>
+                        <p>Fire TV</p>
+                        <i>></i>
+                    </div>
+                    <div>
+                        <p>Kindle E-Readers & eBooks</p>
+                        <i style="font-size: 18px">></i>
+                    </div>
+                    <div>
+                        <p>Audible Audiobooks</p>
+                        <i style="font-size: 18px">></i>
+                    </div>
+                    <div>
+                        <p>Amazon Prime Video</p>
+                        <i style="font-size: 18px">></i>
+                    </div>
+                    <div>
+                        <p>Amazon Prime Music</p>
+                        <i style="font-size: 18px">></i>
+                    </div>
+                </div>
+
+                <hr />
+
+                <div>
+                    <h3>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shop By Category
+                    </h3>
+                    <div>
+                        <p>Mobiles, Computers</p>
+                        <i>></i>
+                    </div>
+                    <div>
+                        <p>TV, Appliances, Electronics</p>
+                        <i>></i>
+                    </div>
+                    <div>
+                        <p>Men's Fashion</p>
+                        <i>></i>
+                    </div>
+                    <div>
+                        <p>Woman's Fashion</p>
+                        <i>></i>
+                    </div>
+                    <hr />
+                    <div>
+                        <p>Home, Kitchen,Pets</p>
+                        <i>></i>
+                    </div>
+                    <div>
+                        <p>Beauty, Health, Glocery</p>
+                        <i>></i>
+                    </div>
+                    <div>
+                        <p>Sports, Fitness, Bags, Luggage</p>
+                        <i>></i>
+                    </div>
+                    <div>
+                        <p>Toys, Baby Products</p>
+                        <i>></i>
+                    </div>
+                    <div>
+                        <p>Kid's Fashion</p>
+                        <i>></i>
+                    </div>
+                    <div>
+                        <p>Car, MotorBike, Industrial</p>
+                        <i>></i>
+                    </div>
+                    <div>
+                        <p>books</p>
+                        <i>></i>
+                    </div>
+                    <div>
+                        <p>Movies, Music & videos Games</p>
+                        <i>></i>
+                    </div>
+                    <div><p>See Less&nbsp;&nbsp;^</p></div>
+                </div>
+
+                <div>
+                    <h3>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Programs & Features
+                    </h3>
+                    <div>
+                        <p>Gift Cards & Mobile Recharges</p>
+                        <i>></i>
+                    </div>
+                    <div><p>Amazon LaunchPad</p></div>
+                    <div>
+                        <p>Handloom and Handicrafts</p>
+                        <i>></i>
+                    </div>
+                    <div>
+                        <p>Flight Tickets</p>
+                        <i>></i>
+                    </div>
+                    <hr />
+                    <div>
+                        <p>Buy more, Save more</p>
+                        <i>></i>
+                    </div>
+                    <div>
+                        <p>Clearance store</p>
+                        <i>></i>
+                    </div>
+
+                    <div><p>See Less&nbsp;&nbsp;^</p></div>
+                </div>
+
+                <div class="sideContent">
+                    <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Help & Settings</h3>
+                    <p>Your Accuunt</p>
+                    <p>Customer Service</p>
+                    <p>Sign in</p>
+                </div>
+                <!-- </div> -->
+                <div class="Echo-Elexa">
+                    <span>
+                        <img
+                            src="./images/signin.png"
+                            width="25px"
+                            style="
+                                color: white;
+                                border-radius: 50%;
+                                margin-left: 20px;
+                            "
+                        />
+                        <h2>Hello, Sign in</h2>
+                    </span>
+                    <div style="display: flex; justify-content: start; gap: 10px; align-items: center; font-weight: bold;">
+                        <img src="./images/back-arrow.png" width="20px">
+                        <p>MAIN MENU</p>
+                    </div>
+                    <hr>
+                    <div class="Echo-Elexa-content">
+                        <h2>Echo & Alexa</h2>
+                        <p>See all devices with Alexa</p>
+                    </div>
+
+                    <hr>
+                    <div class="Echo-Elexa-content">
+                        <h2>Content & Resources</h2>
+                        <p>Meet Alexa</p>
+                        <p>Meet Alexa</p>
+                        <p>Meet Alexa</p>
+                        <p>Meet Alexa</p>
+                        <p>Meet Alexa</p>
+                        <p>Meet Alexa</p>
+                        <p>Meet Alexa</p>
+                        <p>Meet Alexa</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- Hero section -->
+            <div class="heroSection">
+                <div class="hero-section-bg">
+                    <img src="./images/hero.jpg" width="100vw">
+                    <img src="./images/hero2.jpg" width="100vw">
+                    <img src="./images/hero3.jpg" width="100vw">
+                    <img src="./images/hero4.jpg" width="100vw">
+                    <img src="./images/hero5.jpg" width="100vw">
+                    <img src="./images/hero6.jpg" width="100vw">
+                    <img src="./images/hero7.jpg" width="100vw">
+                    <img src="./images/mainPage.jpg" width="100vw">
+                    <img src="./images/mainPage1.jpg" width="100vw">
+                    <img src="./images/mainPage2.jpg" width="100vw">
+                    <img src="./images/mainPage3.jpg" width="100vw">
+                </div>
+                <div class="scroll-hero-section">
+                    <div class="hero-section-btn hero-section-btn-img">
+                        <img src="./images/backward-arrow.png" >
+                    </div>
+                    <div class="hero-section-btn hero-section-btn-img">
+                        <img src="./images/skip-track.png" >
+                    </div>
+                </div>
+                <div class="GridBoxes">
+                    <!-- first box -->
+                    <div class="heroBox">
+                        <h3 style="font-weight: bold">
+                            Up to 70% off | Deals on Amazon Brands & more
+                        </h3>
+                        <div class="heroboximgage">
+                            <div class="heroBoxImg">
+                                <img src="./images/first.jpg" width="140px" />
+                                <figcaption>
+                                    <small
+                                        >Starting ₹169 | Home
+                                        <br />Products</small
+                                    >
+                                </figcaption>
+                            </div>
+                            <div class="heroBoxImg">
+                                <img src="./images/second.jpg" width="140px" />
+                                <figcaption>
+                                    <small
+                                        >Starting ₹139 | Kitchen
+                                        <br />Products</small
+                                    >
+                                </figcaption>
+                            </div>
+                            <div class="heroBoxImg">
+                                <img src="./images/third.jpg" width="140px" />
+                                <figcaption>
+                                    <small
+                                        >Starting ₹99 | Dry fruits, <br />nuts &
+                                        more</small
+                                    >
+                                </figcaption>
+                            </div>
+                            <div class="heroBoxImg">
+                                <img src="./images/fourth.jpg" width="140px" />
+                                <figcaption>
+                                    <small
+                                        >Min. 60% off | Festive
+                                        <br />Collections</small
+                                    >
+                                </figcaption>
+                            </div>
+                        </div>
+
+                        <p class="seeAllOffers">See all Offers</p>
+                    </div>
+
+                    <!-- 2nd box -->
+                    <div class="heroBox">
+                        <h3 style="font-weight: bold">
+                            Deals on smartphones that suits your budget
+                        </h3>
+                        <div class="heroboximgage">
+                            <div class="heroBoxImg">
+                                <img src="./images/first1.jpg" width="140px" />
+                                <figcaption>
+                                    <small>Budget | Under ₹10,000</small>
+                                </figcaption>
+                            </div>
+                            <div class="heroBoxImg">
+                                <img src="./images/second1.jpg" width="140px" />
+                                <figcaption>
+                                    <small>Mid range | ₹10,000-₹25,000</small>
+                                </figcaption>
+                            </div>
+                            <div class="heroBoxImg">
+                                <img src="./images/third1.jpg" width="140px" />
+                                <figcaption>
+                                    <small>Premium | ₹25,000-₹40,000</small>
+                                </figcaption>
+                            </div>
+                            <div class="heroBoxImg">
+                                <img src="./images/fourth1.jpg" width="140px" />
+                                <figcaption>
+                                    <small>Ultra Premium | Above ₹40,000</small>
+                                </figcaption>
+                            </div>
+                        </div>
+
+                        <p class="seeAllOffers">See all Offers</p>
+                    </div>
+
+                    <!-- 3rd box -->
+                    <div class="heroBox">
+                        <h3 style="font-weight: bold">
+                            Starting ₹199 | Shoes & handbags
+                        </h3>
+                        <div class="heroboximgage">
+                            <div class="heroBoxImg">
+                                <img src="./images/first2.jpeg" width="140px" />
+                                <figcaption>
+                                    <small>Sports Shoes</small>
+                                </figcaption>
+                            </div>
+                            <div class="heroBoxImg">
+                                <img src="./images/second2.jpg" width="140px" />
+                                <figcaption>
+                                    <small>Men's Shoes</small>
+                                </figcaption>
+                            </div>
+                            <div class="heroBoxImg">
+                                <img src="./images/third2.jpeg" width="140px" />
+                                <figcaption>
+                                    <small>women's Shoes</small>
+                                </figcaption>
+                            </div>
+                            <div class="heroBoxImg">
+                                <img
+                                    src="./images/fourth2.jpeg"
+                                    width="140px"
+                                />
+                                <figcaption>
+                                    <small>Handbags</small>
+                                </figcaption>
+                            </div>
+                        </div>
+                        <br />
+                        <p class="seeAllOffers">See all Offers</p>
+                    </div>
+
+                    <!-- 4th box -->
+                    <div class="heroBox">
+                        <h3 style="font-weight: bold">
+                            Minimum 50% off | Restyle your home
+                        </h3>
+                        <div class="heroboximgage">
+                            <div class="heroBoxImg">
+                                <img src="./images/first3.jpg" width="140px" />
+                                <figcaption>
+                                    <small>Curtains</small>
+                                </figcaption>
+                            </div>
+                            <div class="heroBoxImg">
+                                <img src="./images/second3.jpg" width="140px" />
+                                <figcaption>
+                                    <small>Floor Lamps</small>
+                                </figcaption>
+                            </div>
+                            <div class="heroBoxImg">
+                                <img src="./images/third3.jpg" width="140px" />
+                                <figcaption>
+                                    <small>Under bed Storage</small>
+                                </figcaption>
+                            </div>
+                            <div class="heroBoxImg">
+                                <img src="./images/fourth3.jpg" width="140px" />
+                                <figcaption>
+                                    <small>Showpieces and idols</small>
+                                </figcaption>
+                            </div>
+                        </div>
+                        <br />
+                        <p class="seeAllOffers">See all Offers</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- second hero section -->
+            <div class="secondGridBoxes">
+                <!-- first box -->
+                <div class="heroBox">
+                    <h3 style="font-weight: bold">
+                        Starting ₹349 | Bestselling headphones
+                    </h3>
+                    <div class="heroboximgage">
+                        <div class="heroBoxImg">
+                            <img src="./images/first3.jpg" width="140px" />
+                            <figcaption>
+                                <small
+                                    >Starting ₹169 | Home <br />Products</small
+                                >
+                            </figcaption>
+                        </div>
+                        <div class="heroBoxImg">
+                            <img src="./images/second.jpg" width="140px" />
+                            <figcaption>
+                                <small
+                                    >Starting ₹139 | Kitchen
+                                    <br />Products</small
+                                >
+                            </figcaption>
+                        </div>
+                        <div class="heroBoxImg">
+                            <img src="./images/third.jpg" width="140px" />
+                            <figcaption>
+                                <small
+                                    >Starting ₹99 | Dry fruits, <br />nuts &
+                                    more</small
+                                >
+                            </figcaption>
+                        </div>
+                        <div class="heroBoxImg">
+                            <img src="./images/fourth.jpg" width="140px" />
+                            <figcaption>
+                                <small
+                                    >Min. 60% off | Festive
+                                    <br />Collections</small
+                                >
+                            </figcaption>
+                        </div>
+                    </div>
+
+                    <p class="seeAllOffers">See all Offers</p>
+                </div>
+
+                <!-- 2nd box -->
+                <div class="heroBox">
+                    <h3 style="font-weight: bold">
+                        Deals on smartphones that suits your budget
+                    </h3>
+                    <div class="heroboximgage">
+                        <div class="heroBoxImg">
+                            <img src="./images/first1.jpg" width="140px" />
+                            <figcaption>
+                                <small>Budget | Under ₹10,000</small>
+                            </figcaption>
+                        </div>
+                        <div class="heroBoxImg">
+                            <img src="./images/second1.jpg" width="140px" />
+                            <figcaption>
+                                <small>Mid range | ₹10,000-₹25,000</small>
+                            </figcaption>
+                        </div>
+                        <div class="heroBoxImg">
+                            <img src="./images/third1.jpg" width="140px" />
+                            <figcaption>
+                                <small>Premium | ₹25,000-₹40,000</small>
+                            </figcaption>
+                        </div>
+                        <div class="heroBoxImg">
+                            <img src="./images/fourth1.jpg" width="140px" />
+                            <figcaption>
+                                <small>Ultra Premium | Above ₹40,000</small>
+                            </figcaption>
+                        </div>
+                    </div>
+
+                    <p class="seeAllOffers">See all Offers</p>
+                </div>
+
+                <!-- 3rd box -->
+                <div class="heroBox">
+                    <h3 style="font-weight: bold">
+                        Starting ₹199 | Shoes & handbags
+                    </h3>
+                    <div class="heroboximgage">
+                        <div class="heroBoxImg">
+                            <img src="./images/first2.jpeg" width="140px" />
+                            <figcaption>
+                                <small>Sports Shoes</small>
+                            </figcaption>
+                        </div>
+                        Choose your location
+                        <div class="heroBoxImg">
+                            <img src="./images/second2.jpg" width="140px" />
+                            <figcaption>
+                                <small>Men's Shoes</small>
+                            </figcaption>
+                        </div>
+                        <div class="heroBoxImg">
+                            <img src="./images/third2.jpeg" width="140px" />
+                            <figcaption>
+                                <small>women's Shoes</small>
+                            </figcaption>
+                        </div>
+                        <div class="heroBoxImg">
+                            <img src="./images/fourth2.jpeg" width="140px" />
+                            <figcaption>
+                                <small>Handbags</small>
+                            </figcaption>
+                        </div>
+                    </div>
+                    <br />
+                    <p class="seeAllOffers">See all Offers</p>
+                </div>
+
+                <!-- 4th box -->
+                <div class="heroBox">
+                    <h3 style="font-weight: bold">
+                        Minimum 50% off | Restyle your home
+                    </h3>
+                    <div class="heroboximgage">
+                        <div class="heroBoxImg">
+                            <img src="./images/first3.jpg" width="140px" />
+                            <figcaption>
+                                <small>Curtains</small>
+                            </figcaption>
+                        </div>
+                        <div class="heroBoxImg">
+                            <img src="./images/second3.jpg" width="140px" />
+                            <figcaption>
+                                <small>Floor Lamps</small>
+                            </figcaption>
+                        </div>
+                        <div class="heroBoxImg">
+                            <img src="./images/third3.jpg" width="140px" />
+                            <figcaption>
+                                <small>Under bed Storage</small>
+                            </figcaption>
+                        </div>
+                        <div class="heroBoxImg">
+                            <img src="./images/fourth3.jpg" width="140px" />
+                            <figcaption>
+                                <small>Showpieces and idols</small>
+                            </figcaption>
+                        </div>
+                    </div>
+                    <br />
+                    <p class="seeAllOffers">See all Offers</p>
+                </div>
+            </div>
+
+            <!-- Horizontal scrolling image -->
+            <div class="scrollGrid">
+                <div>
+                    <div class="navigationBtn hero-section-btn-img">
+                        <img src="./images/backward-arrow.png" width="30px"/>
+                    </div>
+                    <div class="navigationBtn hero-section-btn-img">
+                        <img src="./images/skip-track.png" width="30px" />
+                    </div>
+                </div>
+                <div class="gridHeading">
+                    <h2>Trending deals</h2>
+                    <p class="seeAllOffers">See all Offers</p>
+                </div>
+                <div class="gridContainer">
+                    <!-- Grid Boxes -->
+                    <div class="gridCard">
+                        <div class="gridImg">
+                            <img src="./images/first4.png" width="140px" />
+                        </div>
+                        <div
+                            style="
+                                display: flex;
+                                gap: 10px;
+                                align-items: center;
+                                margin-bottom: 10px;
+                            "
+                        >
+                            <button class="gridButton">52% off</button>
+                            <small style="color: maroon; font-weight: bold"
+                                >Great Indian Festival</small
+                            >
+                        </div>
+                        <div>
+                            <p>
+                                ₹99.00 M.R.P.: <small><del>₹205.00</del></small>
+                            </p>
+                        </div>
+                        <small>Odonil Gel Pocket Mix - (10gx3) Infuse…</small>
+                    </div>
+
+                    <!-- Grid Boxes -->
+                    <div class="gridCard">
+                        <div class="gridImg">
+                            <img src="./images/first4.png" width="140px" />
+                        </div>
+                        <div
+                            style="
+                                display: flex;
+                                gap: 10px;
+                                align-items: center;
+                                margin-bottom: 10px;
+                            "
+                        >
+                            <button class="gridButton">52% off</button>
+                            <small style="color: maroon; font-weight: bold"
+                                >Great Indian Festival</small
+                            >
+                        </div>
+                        <div>
+                            <p>
+                                ₹99.00 M.R.P.: <small><del>₹205.00</del></small>
+                            </p>
+                        </div>
+                        <small>Odonil Gel Pocket Mix - (10gx3) Infuse…</small>
+                    </div>
+                    <!-- Grid Boxes -->
+                    <div class="gridCard">
+                        <div class="gridImg">
+                            <img src="./images/first4.png" width="140px" />
+                        </div>
+                        <div
+                            style="
+                                display: flex;
+                                gap: 10px;
+                                align-items: center;
+                                margin-bottom: 10px;
+                            "
+                        >
+                            <button class="gridButton">52% off</button>
+                            <small style="color: maroon; font-weight: bold"
+                                >Great Indian Festival</small
+                            >
+                        </div>
+                        <div>
+                            <p>
+                                ₹99.00 M.R.P.: <small><del>₹205.00</del></small>
+                            </p>
+                        </div>
+                        <small>Odonil Gel Pocket Mix - (10gx3) Infuse…</small>
+                    </div>
+                    <!-- Grid Boxes -->
+                    <div class="gridCard">
+                        <div class="gridImg">
+                            <img src="./images/first4.png" width="140px" />
+                        </div>
+                        <div
+                            style="
+                                display: flex;
+                                gap: 10px;
+                                align-items: center;
+                                margin-bottom: 10px;
+                            "
+                        >
+                            <button class="gridButton">52% off</button>
+                            <small style="color: maroon; font-weight: bold"
+                                >Great Indian Festival</small
+                            >
+                        </div>
+                        <div>
+                            <p>
+                                ₹99.00 M.R.P.: <small><del>₹205.00</del></small>
+                            </p>
+                        </div>
+                        <small>Odonil Gel Pocket Mix - (10gx3) Infuse…</small>
+                    </div>
+                    <!-- Grid Boxes -->
+                    <div class="gridCard">
+                        <div class="gridImg">
+                            <img src="./images/first4.png" width="140px" />
+                        </div>
+                        <div
+                            style="
+                                display: flex;
+                                gap: 10px;
+                                align-items: center;
+                                margin-bottom: 10px;
+                            "
+                        >
+                            <button class="gridButton">52% off</button>
+                            <small style="color: maroon; font-weight: bold"
+                                >Great Indian Festival</small
+                            >
+                        </div>
+                        <div>
+                            <p>
+                                ₹99.00 M.R.P.: <small><del>₹205.00</del></small>
+                            </p>
+                        </div>
+                        <small>Odonil Gel Pocket Mix - (10gx3) Infuse…</small>
+                    </div>
+                    <!-- Grid Boxes -->
+                    <div class="gridCard">
+                        <div class="gridImg">
+                            <img src="./images/first4.png" width="140px" />
+                        </div>
+                        <div
+                            style="
+                                display: flex;
+                                gap: 10px;
+                                align-items: center;
+                                margin-bottom: 10px;
+                            "
+                        >
+                            <button class="gridButton">52% off</button>
+                            <small style="color: maroon; font-weight: bold"
+                                >Great Indian Festival</small
+                            >
+                        </div>
+                        <div>
+                            <p>
+                                ₹99.00 M.R.P.: <small><del>₹205.00</del></small>
+                            </p>
+                        </div>
+                        <small>Odonil Gel Pocket Mix - (10gx3) Infuse…</small>
+                    </div>
+                    <!-- Grid Boxes -->
+                    <div class="gridCard">
+                        <div class="gridImg">
+                            <img src="./images/first4.png" width="140px" />
+                        </div>
+                        <div
+                            style="
+                                display: flex;
+                                gap: 10px;
+                                align-items: center;
+                                margin-bottom: 10px;
+                            "
+                        >
+                            <button class="gridButton">52% off</button>
+                            <small style="color: maroon; font-weight: bold"
+                                >Great Indian Festival</small
+                            >
+                        </div>
+                        <div>
+                            <p>
+                                ₹99.00 M.R.P.: <small><del>₹205.00</del></small>
+                            </p>
+                        </div>
+                        <small>Odonil Gel Pocket Mix - (10gx3) Infuse…</small>
+                    </div>
+                    <!-- Grid Boxes -->
+                    <div class="gridCard">
+                        <div class="gridImg">
+                            <img src="./images/first4.png" width="140px" />
+                        </div>
+                        <div
+                            style="
+                                display: flex;
+                                gap: 10px;
+                                align-items: center;
+                                margin-bottom: 10px;
+                            "
+                        >
+                            <button class="gridButton">52% off</button>
+                            <small style="color: maroon; font-weight: bold"
+                                >Great Indian Festival</small
+                            >
+                        </div>
+                        <div>
+                            <p>
+                                ₹99.00 M.R.P.: <small><del>₹205.00</del></small>
+                            </p>
+                        </div>
+                        <small>Odonil Gel Pocket Mix - (10gx3) Infuse…</small>
+                    </div>
+                    <!-- Grid Boxes -->
+                    <div class="gridCard">
+                        <div class="gridImg">
+                            <img src="./images/first4.png" width="140px" />
+                        </div>
+                        <div
+                            style="
+                                display: flex;
+                                gap: 10px;
+                                align-items: center;
+                                margin-bottom: 10px;
+                            "
+                        >
+                            <button class="gridButton">52% off</button>
+                            <small style="color: maroon; font-weight: bold"
+                                >Great Indian Festival</small
+                            >
+                        </div>
+                        <div>
+                            <p>
+                                ₹99.00 M.R.P.: <small><del>₹205.00</del></small>
+                            </p>
+                        </div>
+                        <small>Odonil Gel Pocket Mix - (10gx3) Infuse…</small>
+                    </div>
+                    <!-- Grid Boxes -->
+                    <div class="gridCard">
+                        <div class="gridImg">
+                            <img src="./images/first4.png" width="140px" />
+                        </div>
+                        <div
+                            style="
+                                display: flex;
+                                gap: 10px;
+                                align-items: center;
+                                margin-bottom: 10px;
+                            "
+                        >
+                            <button class="gridButton">52% off</button>
+                            <small style="color: maroon; font-weight: bold"
+                                >Great Indian Festival</small
+                            >
+                        </div>
+                        <div>
+                            <p>
+                                ₹99.00 M.R.P.: <small><del>₹205.00</del></small>
+                            </p>
+                        </div>
+                        <small>Odonil Gel Pocket Mix - (10gx3) Infuse…</small>
+                    </div>
+                    <!-- Grid Boxes -->
+                    <div class="gridCard">
+                        <div class="gridImg">
+                            <img src="./images/first4.png" width="140px" />
+                        </div>
+                        <div
+                            style="
+                                display: flex;
+                                gap: 10px;
+                                align-items: center;
+                                margin-bottom: 10px;
+                            "
+                        >
+                            <button class="gridButton">52% off</button>
+                            <small style="color: maroon; font-weight: bold"
+                                >Great Indian Festival</small
+                            >
+                        </div>
+                        <div>
+                            <p>
+                                ₹99.00 M.R.P.: <small><del>₹205.00</del></small>
+                            </p>
+                        </div>
+                        <small>Odonil Gel Pocket Mix - (10gx3) Infuse…</small>
+                    </div>
+                    <!-- Grid Boxes -->
+                    <div class="gridCard">
+                        <div class="gridImg">
+                            <img src="./images/first4.png" width="140px" />
+                        </div>
+                        <div
+                            style="
+                                display: flex;
+                                gap: 10px;
+                                align-items: center;
+                                margin-bottom: 10px;
+                            "
+                        >
+                            <button class="gridButton">52% off</button>
+                            <small style="color: maroon; font-weight: bold"
+                                >Great Indian Festival</small
+                            >
+                        </div>
+                        <div>
+                            <p>
+                                ₹99.00 M.R.P.: <small><del>₹205.00</del></small>
+                            </p>
+                        </div>
+                        <small>Odonil Gel Pocket Mix - (10gx3) Infuse…</small>
+                    </div>
+                    <!-- Grid Boxes -->
+                    <div class="gridCard">
+                        <div class="gridImg">
+                            <img src="./images/first4.png" width="140px" />
+                        </div>
+                        <div
+                            style="
+                                display: flex;
+                                gap: 10px;
+                                align-items: center;
+                                margin-bottom: 10px;
+                            "
+                        >
+                            <button class="gridButton">52% off</button>
+                            <small style="color: maroon; font-weight: bold"
+                                >Great Indian Festival</small
+                            >
+                        </div>
+                        <div>
+                            <p>
+                                ₹99.00 M.R.P.: <small><del>₹205.00</del></small>
+                            </p>
+                        </div>
+                        <small>Odonil Gel Pocket Mix - (10gx3) Infuse…</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second horizontal scroll bar -->
+            <div class="scrollGrid" id="scrollimg">
+                <div>
+                    <div class="scrollBtn hero-section-btn-img">
+                        <img src="./images/backward-arrow.png" width="30px" />
+                    </div>
+                    <div class="scrollBtn hero-section-btn-img">
+                        <img src="./images/skip-track.png" width="30px" />
+                    </div>
+                </div>
+                <div class="gridHeading">
+                    <h2>
+                        Starting ₹99 + 20% cashback on first order | Beauty &
+                        makeup
+                    </h2>
+                    <p class="seeAllOffers">See all Offers</p>
+                </div>
+                <div class="gridContainer">
+                    <!-- Grid Boxes -->
+                    <div class="gridCard">
+                        <img
+                            src="./images/first5.jpg"
+                            width="100px"
+                            height="250px"
+                        />
+                    </div>
+                    <div class="gridCard">
+                        <img
+                            src="./images/lakme.jpg"
+                            width="100px"
+                            height="250px"
+                        />
+                    </div>
+                    <div class="gridCard">
+                        <img
+                            src="./images/goldSaal.jpg"
+                            width="100px"
+                            height="250px"
+                        />
+                    </div>
+                    <div class="gridCard">
+                        <img
+                            src="./images/lakme2.jpg"
+                            width="100px"
+                            height="250px"
+                        />
+                    </div>
+                    <div class="gridCard">
+                        <img
+                            src="./images/sansessional.jpg"
+                            width="100px"
+                            height="250px"
+                        />
+                    </div>
+                    <div class="gridCard">
+                        <img
+                            src="./images/lakme.jpg"
+                            width="100px"
+                            height="250px"
+                        />
+                    </div>
+                    <div class="gridCard">
+                        <img
+                            src="./images/goldSaal.jpg"
+                            width="100px"
+                            height="250px"
+                        />
+                    </div>
+                    <div class="gridCard">
+                        <img
+                            src="./images/lakme2.jpg"
+                            width="100px"
+                            height="250px"
+                        />
+                    </div>
+                    <div class="gridCard">
+                        <img
+                            src="./images/sansessional.jpg"
+                            width="100px"
+                            height="250px"
+                        />
+                    </div>
+                    <div class="gridCard">
+                        <img
+                            src="./images/lakme.jpg"
+                            width="100px"
+                            height="250px"
+                        />
+                    </div>
+                    <div class="gridCard">
+                        <img
+                            src="./images/lakme2.jpg"
+                            width="100px"
+                            height="250px"
+                        />
+                    </div>
+                    <div class="gridCard">
+                        <img
+                            src="./images/goldSaal.jpg"
+                            width="100px"
+                            height="250px"
+                        />
+                    </div>
+                    <div class="gridCard">
+                        <img
+                            src="./images/sansessional.jpg"
+                            width="100px"
+                            height="250px"
+                        />
+                    </div>
+                    <div class="gridCard">
+                        <img
+                            src="./images/lakme.jpg"
+                            width="100px"
+                            height="250px"
+                        />
+                    </div>
+                    <div class="gridCard">
+                        <img
+                            src="./images/sansessional.jpg"
+                            width="100px"
+                            height="250px"
+                        />
+                    </div>
+                    <div class="gridCard">
+                        <img
+                            src="./images/goldSaal.jpg"
+                            width="100px"
+                            height="250px"
+                        />
+                    </div>
+                    <div class="gridCard">
+                        <img
+                            src="./images/lakme2.jpg"
+                            width="100px"
+                            height="250px"
+                        />
+                    </div>
+                    <div class="gridCard">
+                        <img
+                            src="./images/lakme.jpg"
+                            width="100px"
+                            height="250px"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third hero section -->
+            <div class="secondGridBoxes">
+                <!-- first box -->
+                <div class="heroBox">
+                    <h3 style="font-weight: bold">
+                        Starting ₹349 | Bestselling headphones
+                    </h3>
+                    <div class="heroboximgage">
+                        <div class="heroBoxImg">
+                            <img src="./images/first3.jpg" width="140px" />
+                            <figcaption>
+                                <small
+                                    >Starting ₹169 | Home <br />Products</small
+                                >
+                            </figcaption>
+                        </div>
+                        <div class="heroBoxImg">
+                            <img src="./images/second.jpg" width="140px" />
+                            <figcaption>
+                                <small
+                                    >Starting ₹139 | Kitchen
+                                    <br />Products</small
+                                >
+                            </figcaption>
+                        </div>
+                        <div class="heroBoxImg">
+                            <img src="./images/third.jpg" width="140px" />
+                            <figcaption>
+                                <small
+                                    >Starting ₹99 | Dry fruits, <br />nuts &
+                                    more</small
+                                >
+                            </figcaption>
+                        </div>
+                        <div class="heroBoxImg">
+                            <img src="./images/fourth.jpg" width="140px" />
+                            <figcaption>
+                                <small
+                                    >Min. 60% off | Festive
+                                    <br />Collections</small
+                                >
+                            </figcaption>
+                        </div>
+                    </div>
+
+                    <p class="seeAllOffers">See all Offers</p>
+                </div>
+
+                <!-- 2nd box -->
+                <div class="heroBox">
+                    <h3 style="font-weight: bold">
+                        Deals on smartphones that suits your budget
+                    </h3>
+                    <div class="heroboximgage">
+                        <div class="heroBoxImg">
+                            <img src="./images/first1.jpg" width="140px" />
+                            <figcaption>
+                                <small>Budget | Under ₹10,000</small>
+                            </figcaption>
+                        </div>
+                        <div class="heroBoxImg">
+                            <img src="./images/second1.jpg" width="140px" />
+                            <figcaption>
+                                <small>Mid range | ₹10,000-₹25,000</small>
+                            </figcaption>
+                        </div>
+                        <div class="heroBoxImg">
+                            <img src="./images/third1.jpg" width="140px" />
+                            <figcaption>
+                                <small>Premium | ₹25,000-₹40,000</small>
+                            </figcaption>
+                        </div>
+                        <div class="heroBoxImg">
+                            <img src="./images/fourth1.jpg" width="140px" />
+                            <figcaption>
+                                <small>Ultra Premium | Above ₹40,000</small>
+                            </figcaption>
+                        </div>
+                    </div>
+
+                    <p class="seeAllOffers">See all Offers</p>
+                </div>
+
+                <!-- 3rd box -->
+                <div class="heroBox">
+                    <h3 style="font-weight: bold">
+                        Starting ₹199 | Shoes & handbags
+                    </h3>
+                    <div class="heroboximgage">
+                        <div class="heroBoxImg">
+                            <img src="./images/first2.jpeg" width="140px" />
+                            <figcaption>
+                                <small>Sports Shoes</small>
+                            </figcaption>
+                        </div>
+                        <div class="heroBoxImg">
+                            <img src="./images/second2.jpg" width="140px" />
+                            <figcaption>
+                                <small>Men's Shoes</small>
+                            </figcaption>
+                        </div>
+                        <div class="heroBoxImg">
+                            <img src="./images/third2.jpeg" width="140px" />
+                            <figcaption>
+                                <small>women's Shoes</small>
+                            </figcaption>
+                        </div>
+                        <div class="heroBoxImg">
+                            <img src="./images/fourth2.jpeg" width="140px" />
+                            <figcaption>
+                                <small>Handbags</small>
+                            </figcaption>
+                        </div>
+                    </div>
+                    <br />
+                    <p class="seeAllOffers">See all Offers</p>
+                </div>
+
+                <!-- 4th box -->
+                <div class="heroBox">
+                    <h3 style="font-weight: bold">
+                        Minimum 50% off | Restyle your home
+                    </h3>
+                    <div class="heroboximgage">
+                        <div class="heroBoxImg">
+                            <img src="./images/first3.jpg" width="140px" />
+                            <figcaption>
+                                <small>Curtains</small>
+                            </figcaption>
+                        </div>
+                        <div class="heroBoxImg">
+                            <img src="./images/second3.jpg" width="140px" />
+                            <figcaption>
+                                <small>Floor Lamps</small>
+                            </figcaption>
+                        </div>
+                        <div class="heroBoxImg">
+                            <img src="./images/third3.jpg" width="140px" />
+                            <figcaption>
+                                <small>Under bed Storage</small>
+                            </figcaption>
+                        </div>
+                        <div class="heroBoxImg">
+                            <img src="./images/fourth3.jpg" width="140px" />
+                            <figcaption>
+                                <small>Showpieces and idols</small>
+                            </figcaption>
+                        </div>
+                    </div>
+                    <br />
+                    <p class="seeAllOffers">See all Offers</p>
+                </div>
+            </div>
+
+            <!-- Third Horizontal scroll bar -->
+            <div class="scrollGrid" id="scrollimg1">
+                <div>
+                    <div class="secondscrollBtn hero-section-btn-img">
+                        <img src="./images/backward-arrow.png" width="30px"/>
+                    </div>
+                    <div class="secondscrollBtn hero-section-btn-img">
+                        <img src="./images/skip-track.png" width="30px" />
+                    </div>
+                </div>
+                <div class="gridHeading">
+                    <h2>Explore top offers in smartphones</h2>
+                    <p class="seeAllOffers">See all Offers</p>
+                </div>
+                <div class="gridContainer">
+                    <!-- Grid Boxes -->
+                    <div class="gridCard">
+                        <img src="./images/mobile.jpg" width="200px" />
+                    </div>
+                    <div class="gridCard">
+                        <img src="./images/redmi.jpg" width="200px" />
+                    </div>
+                    <div class="gridCard">
+                        <img src="./images/realme.jpg" width="200px" />
+                    </div>
+                    <div class="gridCard">
+                        <img src="./images/oneplus.jpg" width="200px" />
+                    </div>
+                    <div class="gridCard">
+                        <img src="./images/lava.jpg" width="200px" />
+                    </div>
+                    <div class="gridCard">
+                        <img src="./images/tecno.jpg" width="200px" />
+                    </div>
+                    <div class="gridCard">
+                        <img src="./images/samsung.jpg" width="200px" />
+                    </div>
+                    <div class="gridCard">
+                        <img src="./images/realme.jpg" width="200px" />
+                    </div>
+                    <div class="gridCard">
+                        <img src="./images/lava.jpg" width="200px" />
+                    </div>
+                    <div class="gridCard">
+                        <img src="./images/mobile.jpg" width="200px" />
+                    </div>
+                    <div class="gridCard">
+                        <img src="./images/intel.jpg" width="200px" />
+                    </div>
+                    <div class="gridCard">
+                        <img src="./images/oneplus.jpg" width="200px" />
+                    </div>
+                    <div class="gridCard">
+                        <img src="./images/tecno.jpg" width="200px" />
+                    </div>
+                    <div class="gridCard">
+                        <img src="./images/intel.jpg" width="200px" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Train Ticket -->
+            <div class="trainTKT">
+                <img src="./images/trainTKT.jpg" width="100%" height="300px" />
+            </div>
+
+            <!-- Fourth Horizontal scroll bar -->
+            <div class="scrollGrid" id="scrollimg2">
+                <div>
+                    <div class="thirdscrollBtn hero-section-btn-img">
+                        <img src="./images/backward-arrow.png" width="30px" />
+                    </div>
+                    <div class="thirdscrollBtn hero-section-btn-img">
+                        <img src="./images/skip-track.png" width="30px" />
+                    </div>
+                </div>
+                <div class="gridHeading">
+                    <h2>
+                        Starting ₹99 | Bestselling dry fruits & nuts | Amazon
+                        brands & more
+                    </h2>
+                    <p class="seeAllOffers">See all Offers</p>
+                </div>
+                <div class="gridContainer">
+                    <!-- Grid Boxes -->
+                    <div class="gridCard">
+                        <img
+                            src="./images/vedaka.jpg"
+                            width="180px"
+                            height="180px"
+                        />
+                    </div>
+                    <div class="gridCard">
+                        <img
+                            src="./images/vedaka1.jpg"
+                            width="180px"
+                            height="180px"
+                        />
+                    </div>
+                    <div class="gridCard">
+                        <img
+                            src="./images/vedaka2.jpg"
+                            width="180px"
+                            height="180px"
+                        />
+                    </div>
+                    <div class="gridCard">
+                        <img
+                            src="./images/solimo.jpg"
+                            width="180px"
+                            height="180px"
+                        />
+                    </div>
+                    <div class="gridCard">
+                        <img
+                            src="./images/vedaka3.jpg"
+                            width="180px"
+                            height="180px"
+                        />
+                    </div>
+                    <div class="gridCard">
+                        <img
+                            src="./images/solimo2.jpg"
+                            width="180px"
+                            height="180px"
+                        />
+                    </div>
+                    <div class="gridCard">
+                        <img
+                            src="./images/vedaka4.jpg"
+                            width="180px"
+                            height="180px"
+                        />
+                    </div>
+                    <div class="gridCard">
+                        <img
+                            src="./images/vedaka.jpg"
+                            width="180px"
+                            height="180px"
+                        />
+                    </div>
+                    <div class="gridCard">
+                        <img
+                            src="./images/vedaka2.jpg"
+                            width="180px"
+                            height="180px"
+                        />
+                    </div>
+                    <div class="gridCard">
+                        <img
+                            src="./images/solimo2.jpg"
+                            width="180px"
+                            height="180px"
+                        />
+                    </div>
+                    <div class="gridCard">
+                        <img
+                            src="./images/vedaka3.jpg"
+                            width="180px"
+                            height="180px"
+                        />
+                    </div>
+                    <div class="gridCard">
+                        <img
+                            src="./images/solimo.jpg"
+                            width="180px"
+                            height="180px"
+                        />
+                    </div>
+                    <div class="gridCard">
+                        <img
+                            src="./images/vedaka2.jpg"
+                            width="180px"
+                            height="180px"
+                        />
+                    </div>
+                    <div class="gridCard">
+                        <img
+                            src="./images/solimo.jpg"
+                            width="180px"
+                            height="180px"
+                        />
+                    </div>
+                    <div class="gridCard">
+                        <img
+                            src="./images/vedaka.jpg"
+                            width="180px"
+                            height="180px"
+                        />
+                    </div>
+                    <div class="gridCard">
+                        <img
+                            src="./images/vedaka.jpg"
+                            width="180px"
+                            height="180px"
+                        />
+                    </div>
+                    <div class="gridCard">
+                        <img
+                            src="./images/solimo2.jpg"
+                            width="180px"
+                            height="180px"
+                        />
+                    </div>
+                    <div class="gridCard">
+                        <img
+                            src="./images/vedaka2.jpg"
+                            width="180px"
+                            height="180px"
+                        />
+                    </div>
+                    <div class="gridCard">
+                        <img
+                            src="./images/solimo.jpg"
+                            width="180px"
+                            height="180px"
+                        />
+                    </div>
+                    <div class="gridCard">
+                        <img
+                            src="./images/vedaka.jpg"
+                            width="180px"
+                            height="180px"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fourth Hero section -->
+            <div class="secondGridBoxes">
+                <!-- first box -->
+                <div class="heroBox">
+                    <h3 style="font-weight: bold">
+                        Starting ₹349 | Bestselling headphones
+                    </h3>
+                    <div class="heroboximgage">
+                        <div class="heroBoxImg">
+                            <img src="./images/first3.jpg" width="140px" />
+                            <figcaption>
+                                <small
+                                    >Starting ₹169 | Home <br />Products</small
+                                >
+                            </figcaption>
+                        </div>
+                        <div class="heroBoxImg">
+                            <img src="./images/second.jpg" width="140px" />
+                            <figcaption>
+                                <small
+                                    >Starting ₹139 | Kitchen
+                                    <br />Products</small
+                                >
+                            </figcaption>
+                        </div>
+                        <div class="heroBoxImg">
+                            <img src="./images/third.jpg" width="140px" />
+                            <figcaption>
+                                <small
+                                    >Starting ₹99 | Dry fruits, <br />nuts &
+                                    more</small
+                                >
+                            </figcaption>
+                        </div>
+                        <div class="heroBoxImg">
+                            <img src="./images/fourth.jpg" width="140px" />
+                            <figcaption>
+                                <small
+                                    >Min. 60% off | Festive
+                                    <br />Collections</small
+                                >
+                            </figcaption>
+                        </div>
+                    </div>
+
+                    <p class="seeAllOffers">See all Offers</p>
+                </div>
+
+                <!-- 2nd box -->
+                <div class="heroBox">
+                    <h3 style="font-weight: bold">
+                        Deals on smartphones that suits your budget
+                    </h3>
+                    <div class="heroboximgage">
+                        <div class="heroBoxImg">
+                            <img src="./images/first1.jpg" width="140px" />
+                            <figcaption>
+                                <small>Budget | Under ₹10,000</small>
+                            </figcaption>
+                        </div>
+                        <div class="heroBoxImg">
+                            <img src="./images/second1.jpg" width="140px" />
+                            <figcaption>
+                                <small>Mid range | ₹10,000-₹25,000</small>
+                            </figcaption>
+                        </div>
+                        <div class="heroBoxImg">
+                            <img src="./images/third1.jpg" width="140px" />
+                            <figcaption>
+                                <small>Premium | ₹25,000-₹40,000</small>
+                            </figcaption>
+                        </div>
+                        <div class="heroBoxImg">
+                            <img src="./images/fourth1.jpg" width="140px" />
+                            <figcaption>
+                                <small>Ultra Premium | Above ₹40,000</small>
+                            </figcaption>
+                        </div>
+                    </div>
+
+                    <p class="seeAllOffers">See all Offers</p>
+                </div>
+
+                <!-- 3rd box -->
+                <div class="heroBox">
+                    <h3 style="font-weight: bold">
+                        Starting ₹199 | Shoes & handbags
+                    </h3>
+                    <div class="heroboximgage">
+                        <div class="heroBoxImg">
+                            <img src="./images/first2.jpeg" width="140px" />
+                            <figcaption>
+                                <small>Sports Shoes</small>
+                            </figcaption>
+                        </div>
+                        <div class="heroBoxImg">
+                            <img src="./images/second2.jpg" width="140px" />
+                            <figcaption>
+                                <small>Men's Shoes</small>
+                            </figcaption>
+                        </div>
+                        <div class="heroBoxImg">
+                            <img src="./images/third2.jpeg" width="140px" />
+                            <figcaption>
+                                <small>women's Shoes</small>
+                            </figcaption>
+                        </div>
+                        <div class="heroBoxImg">
+                            <img src="./images/fourth2.jpeg" width="140px" />
+                            <figcaption>
+                                <small>Handbags</small>
+                            </figcaption>
+                        </div>
+                    </div>
+                    <br />
+                    <p class="seeAllOffers">See all Offers</p>
+                </div>
+
+                <!-- 4th box -->
+                <div class="heroBox">
+                    <h3 style="font-weight: bold">
+                        Minimum 50% off | Restyle your home
+                    </h3>
+                    <div class="heroboximgage">
+                        <div class="heroBoxImg">
+                            <img src="./images/first3.jpg" width="140px" />
+                            <figcaption>
+                                <small>Curtains</small>
+                            </figcaption>
+                        </div>
+                        <div class="heroBoxImg">
+                            <img src="./images/second3.jpg" width="140px" />
+                            <figcaption>
+                                <small>Floor Lamps</small>
+                            </figcaption>
+                        </div>
+                        <div class="heroBoxImg">
+                            <img src="./images/third3.jpg" width="140px" />
+                            <figcaption>
+                                <small>Under bed Storage</small>
+                            </figcaption>
+                        </div>
+                        <div class="heroBoxImg">
+                            <img src="./images/fourth3.jpg" width="140px" />
+                            <figcaption>
+                                <small>Showpieces and idols</small>
+                            </figcaption>
+                        </div>
+                    </div>
+                    <br />
+                    <p class="seeAllOffers">See all Offers</p>
+                </div>
+            </div>
+
+            <!-- Fifth horizontal scroll bar -->
+            <div class="scrollGrid" id="scrollimg3">
+                <div>
+                    <div class="fourthscrollBtn hero-section-btn-img">
+                        <img src="./images/backward-arrow.png" width="30px" />
+                    </div>
+                    <div class="fourthscrollBtn hero-section-btn-img">
+                        <img src="./images/skip-track.png" width="30px" />
+                    </div>
+                </div>
+                <div class="gridHeading">
+                    <h2>Explore top offers in smartphones</h2>
+                    <p class="seeAllOffers">See all Offers</p>
+                </div>
+                <div class="gridContainer">
+                    <!-- Grid Boxes -->
+                    <div class="gridCard">
+                        <img src="./images/mobiles.jpg" width="200px" />
+                    </div>
+                    <div class="gridCard">
+                        <img src="./images/electronic.jpg" width="200px" />
+                    </div>
+                    <div class="gridCard">
+                        <img src="./images/kitchens.jpg" width="200px" />
+                    </div>
+                    <div class="gridCard">
+                        <img src="./images/tvs.jpg" width="200px" />
+                    </div>
+                    <div class="gridCard">
+                        <img src="./images/fashion.jpg" width="200px" />
+                    </div>
+                    <div class="gridCard">
+                        <img src="./images/dailyneed.jpg" width="200px" />
+                    </div>
+                    <div class="gridCard">
+                        <img src="./images/books.jpg" width="200px" />
+                    </div>
+                    <div class="gridCard">
+                        <img src="./images/amazonBrands.jpg" width="200px" />
+                    </div>
+                    <div class="gridCard">
+                        <img src="./images/alexa.jpg" width="200px" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Sign in page -->
+            <div class="bottomSign">
+                <hr />
+                <div class="signhead">
+                    <small>See personalized recommendations</small>
+                    <a href="amazonsignin.html" style="all: unset;"><button style="width: 300px">Sign in</button></a>
+                    <small>New Cusotmer?&nbsp; <a href="sign-up.html" style="all: unset;"><span>Start here.</span></small></a>
+                </div>
+                <hr />
+            </div>
+
+            <!-- Back to top -->
+            <a href="#top" style="text-decoration: none; margin-top: 20px; cursor: pointer;"
+                ><div class="backToTop">Back to Top</div></a
+            >
+
+            <!-- Footer section -->
+            <div class="footer">
+                <div class="footerDiv">
+                    <h3>Get to Know Us</h3>
+                    <span>About us</span>
+                    <span>Careers</span>
+                    <span>Press Releases</span>
+                    <span>Amazon science</span>
+                </div>
+                <div class="footerDiv">
+                    <h3>Connect with Us</h3>
+                    <span>Facebook</span>
+                    <span>Twitter</span>
+                    <span>Intagram</span>
+                </div>
+                <div class="footerDiv">
+                    <h3>Make Money with Us</h3>
+                    <span>Sell on Amazon</span>
+                    <span>Sell under Amazon Accelerator</span>
+                    <span>Protect and Build Your Brand</span>
+                    <span>Amazon Global Selling</span>
+                    <span>Become an Affiliate</span>
+                    <span>Fulfilment by Amazon</span>
+                    <span>Advertise Your Products</span>
+                    <span>Amazon Pay on Merchants</span>
+                </div>
+                <div class="footerDiv">
+                    <h3>Let Us Help You</h3>
+                    <span>COVID-19 and Amazon</span>
+                    <span>Your Account</span>
+                    <span>Returns Centre</span>
+                    <span>100% Purchase Protection</span>
+                    <span>Amazon App Download</span>
+                    <span>Help</span>
+                </div>
+            </div>
+
+            <!-- Sales Area -->
+            <div class="salesArea">
+                <div class="logo-section">
+                    <a href="index.html"><img
+                        src="./images/Amazon-Logo.png"
+                        width="100px"
+                        height="40px"
+                    /></a>
+                    <div class="languageSection">
+                        <div style="display: flex; gap: 10px">
+                            <img
+                                src="./images/world.png"
+                                width="20px"
+                                height="20px"
+                            />
+                            <p>English</p>
+                        </div>
+                        <img
+                            src="./images/up-and-down-arrows.png"
+                            width="20px"
+                            height="20px"
+                        />
+
+                        <div class="footerLanguage">
+                            <div class="underline">
+                                <input
+                                    type="radio"
+                                    name="chooseLanguage"
+                                    id="en"
+                                />
+                                <label for="en">English - EN</label>
+                            </div>
+                            <hr />
+                            <div class="underline">
+                                <input
+                                    type="radio"
+                                    name="chooseLanguage"
+                                    id="hi"
+                                />
+                                <label for="hi">हिन्दी - HI</label>
+                            </div>
+                            <div class="underline">
+                                <input
+                                    type="radio"
+                                    name="chooseLanguage"
+                                    id="ta"
+                                />
+                                <label for="ta">தமிழ் - TA </label>
+                            </div>
+                            <div class="underline">
+                                <input
+                                    type="radio"
+                                    name="chooseLanguage"
+                                    id="te"
+                                />
+                                <label for="te">తెలుగు - TE</label>
+                            </div>
+                            <div class="underline">
+                                <input
+                                    type="radio"
+                                    name="chooseLanguage"
+                                    id="kn"
+                                />
+                                <label for="kn">ಕನ್ನಡ - KN</label>
+                            </div>
+                            <div class="underline">
+                                <input
+                                    type="radio"
+                                    name="chooseLanguage"
+                                    id="ml"
+                                />
+                                <label for="ml">മലയാളം - ML</label>
+                            </div>
+                            <div class="underline">
+                                <input
+                                    type="radio"
+                                    name="chooseLanguage"
+                                    id="bn"
+                                />
+                                <label for="bn">বাংলা - BN</label>
+                            </div>
+                            <div class="underline">
+                                <input
+                                    type="radio"
+                                    name="chooseLanguage"
+                                    id="mr"
+                                />
+                                <label for="mr">मराठी - MR</label>
+                            </div>
+
+                            &nbsp;
+                            <div class="underline" style="color: blue">
+                                <label class="link">Learn More</label>
+                            </div>
+
+                            <hr />
+                            <div
+                                style="
+                                    display: flex;
+                                    gap: 5px;
+                                    align-items: center;
+                                "
+                            >
+                                <img
+                                    src="./images/flag.png"
+                                    width="12px"
+                                    height="12px"
+                                />
+                                <small>You are shopping on Amazon.in</small>
+                            </div>
+                            <div class="underline" style="color: blue">
+                                <label class="link"
+                                    >Change Country/region</label
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="SalesContinent">
+                    <p>India</p>
+                    <p>Australia</p>
+                    <p>Brazil</p>
+                    <p>Canada</p>
+                    <p>China</p>
+                    <p>France</p>
+                    <p>Germany</p>
+                    <p>Italy</p>
+                    <p>Japan</p>
+                    <p>Mexico</p>
+                    <p>Netherlands</p>
+                    <p>Poland</p>
+                    <p>Singapore</p>
+                    <p>Spain</p>
+                    <p>Turkey</p>
+                    <p>United Arab Emirates</p>
+                    <p>United Kingdom</p>
+                    <p>United States</p>
+                </div>
+            </div>
+
+            <!-- Amazon Brands -->
+            <div class="Amazon-Brands">
+                <div class="brands-container">
+                    <div>
+                        <h4>AbeBooks</h4>
+                        <p>Books, art</p>
+                        <p>& collectibles</p>
+                    </div>
+
+                    <div>
+                        <h4>Amazon Web Services</h4>
+                        <p>Scalable Cloud</p>
+                        <p>Computing Services</p>
+                    </div>
+
+                    <div>
+                        <h4>Audible</h4>
+                        <p>Download</p>
+                        <p>Audio Books</p>
+                    </div>
+
+                    <div>
+                        <h4>IMDb</h4>
+                        <p>Movies, Tv</p>
+                        <p>& Celebrities</p>
+                    </div>
+
+                    <div>
+                        <h4>Shopbop</h4>
+                        <p>Designer</p>
+                        <p>Fashion Brands</p>
+                    </div>
+
+                    <div>
+                        <h4>Amazon Business</h4>
+                        <p>Everything For</p>
+                        <p>Your Business</p>
+                    </div>
+
+                    <div>
+                        <h4>Prime Now</h4>
+                        <p>2-Hour Delivery</p>
+                        <p>On Everyday Items</p>
+                    </div>
+
+                    <div>
+                        <h4>Amazon Prime Music</h4>
+                        <p>100 million songs, ad-free</p>
+                        <p>Over 15 million podcast episodes</p>
+                    </div>
+                </div>
+
+                <div class="copyright">
+                    <div>
+                        <p>Conditions of Use & Sale</p>
+                        <p>Privacy Notice</p>
+                        <p>Interest-Based Ads</p>
+                    </div>
+                    <p>© 1996-2023, Amazon.com, Inc. or its affiliates</p>
+                </div>
+            </div>
+
+            <!-- Update Address box -->
+            <div class="updateAddresses">
+                <div class="updateHeading">
+                    <h3>Choose your location</h3>
+                </div>
+
+                <div class="addDetails">
+                    <small style="color: rgb(62, 61, 61)"
+                        >Select a delivery location to see product availability
+                        and delivery options</small
+                    >
+                    <a href="amazonsignin.html" style="all: unset;">
+
+                        <button class="addBtn">
+                            Sign in to see your addresses
+                        </button>
+                    </a>
+                    <div
+                        style="
+                            display: flex;
+                            justify-content: space-between;
+                            flex-direction: row;
+                            color: rgb(41, 40, 40);
+                        "
+                    >
+                        <hr />
+                        <small>or enter an Indian pincode</small>
+                        <hr />
+                    </div>
+
+                    <div class="AddInput">
+                        <div>
+                            <input type="email" id="enterEmailId" onfocus="emailField()" />
+                            <span id="errorEmail" style="display: none; transition: 1s;" ></span>
+                        </div>
+                        <button onclick="checkEmailField()">Apply</button>
+                    </div>
+
+                    <script>
+                        const enterEmail = document.getElementById("enterEmailId");
+                        function checkEmailField() {
+                            if (enterEmail.value == "") {
+                                document.getElementById("errorEmail").style.display = 'block';
+                                document.getElementById("errorEmail").innerHTML = "Enter email id";
+                                document.getElementById('errorEmail').style.color = 'red';
+                            } else {
+                                if (enterEmail.type != 'email') {
+                                    document.getElementById("errorEmail").style.display = 'block';
+                                    document.getElementById("errorEmail").innerHTML = "Enter valid email";
+                                    document.getElementById('errorEmail').style.color = 'red';
+                                }
+                            }
+                        }
+                        function emailField() {
+                            document.getElementById("errorEmail").style.display = 'none';
+                        }
+                    </script>
+
+                    <img
+                        src="https://static.vecteezy.com/system/resources/previews/021/815/794/original/cross-close-icon-free-png.png"
+                        width="20px"
+                        height="20px"
+                        onclick="closeSideBar()"
+                        style="
+                            cursor: pointer;
+                            position: absolute;
+                            top: 0px;
+                            right: -30px;
+                        "
+                    />
+                </div>
+            </div>
+        </div>
+
+        <!-- Overlay -->
+        <div class="overlay" onclick="closeSideBar()"></div>
+        <script src="script.js"></script>
+    </body>
+</html>

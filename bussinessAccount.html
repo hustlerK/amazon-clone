@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Business</title>
+    <link rel="shortcut icon" href="./images/amazon-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style2.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .nav-bar {
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 0;
+            background-color: rgb(3, 20, 53);
+            font-family: sans-serif;
+        }
+
+        .step-business {
+            display: flex;
+            gap: 20px;
+            color: white;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+        .steps {
+            display: flex;
+            gap:10px;
+            align-items: center;
+        }
+
+        .step-number {
+            height: 22px;
+            width: 22px;
+            border-radius: 50%;
+            border: 2px solid white;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .step-business > .steps:nth-child(1)> .step-number:nth-child(1) {
+            background-color: white;
+            color: black;
+        }
+
+        .box-container {
+            display: flex;
+            width: 58vw;
+            justify-content: center;
+            margin: auto;
+            margin-top: 80px;
+            height: 70vh;
+
+        }
+        .first-box {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            border: 1px solid rgb(198, 198, 198);
+            padding: 50px;
+            gap: 10px;
+        }
+        .first-box h3 {
+            font-size: 25px;
+            opacity: 0.85;
+            margin-bottom: 10px;
+        }
+        
+        .first-box label {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        .first-box input {
+            padding: 5px;
+            font-size: 18px;
+        }
+
+        .first-box button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: rgb(246, 173, 4);
+            font-size: 14px;
+            font-weight: bold;
+            opacity: 0.8;
+            cursor: pointer;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+
+        .first-box p {
+            opacity: 0.95;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .second-box {
+            width: 50%;
+            background-color: rgb(3, 20, 53);
+            color: white;
+            /* padding: 30px; */
+            display: flex;
+            flex-direction: column;
+        }
+        .second-box h2 {
+            padding: 20px;
+        }
+        .first-para {
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .first-para small {
+            font-size: 12px;
+            font-weight: lighter;
+        }
+
+        .footer {
+            width: 100%;
+            background-color: rgb(25, 37, 63);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 14px;
+            cursor: pointer;
+            color: rgb(57, 57, 220);
+        }
+
+        .copyright-section {
+            display: grid;
+            gap: 10px;
+            margin-left: 22%;
+            margin-top: 20px;
+            opacity: 0.9;
+            font-size: 14px;
+        }
+
+        .copyright-section span {
+            color: blue;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <a href="index.html"><img src="./images/amazon-business.png" height="30px"></a>
+        <div class="step-business">
+            <div class="steps">
+                <div class="step-number">1</div>
+                <p style="font-weight: bold;">Account Creattion</p>
+            </div>
+            
+            <div class="steps">
+                <div class="step-number">2</div>
+                <p>Business Details</p>
+            </div>
+            <div class="steps">
+                <div class="step-number">3</div>
+                <p>Finish</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="box-container">
+        <div class="first-box">
+            <h3>Let us create your free Amazon Business account</h3>
+            <label>Enter the email you'd like to use for your business account</label>
+            <input type="text" placeholder="Enter email address">
+            <button>Get Started</button>
+            <p>Already an Amazon Business customer? <a href="amazonsignin.html" style="all: unset;"><span style="color: blue;" class="hover">Sign in</span></a></p>
+        </div>
+        <div class="second-box">
+            <h2>Reshape buying for your organisation</h2>
+            <div class="first-para">
+                <img src="https://m.media-amazon.com/images/G/01/AmazonBusiness/Registration/desktop/quantity-discounts-icon.svg" alt="">
+                <div>
+                    <h3>GST Invoice & Bulk Discounts</h3>
+                    <small>Save up to 28% more with GST input credit and avail discounts on multi-unit purchases.</small>
+                </div>
+            </div>
+            
+            <div class="first-para">
+                <img src="https://m.media-amazon.com/images/G/01/AmazonBusiness/Registration/desktop/quantity-discounts-icon.svg" alt="">
+                <div>
+                    <h3>GST Invoice & Bulk Discounts</h3>
+                    <small>Save up to 28% more with GST input credit and avail discounts on multi-unit purchases.</small>
+                </div>
+            </div>
+
+            <div class="first-para">
+                <img src="https://m.media-amazon.com/images/G/01/AmazonBusiness/Registration/desktop/quantity-discounts-icon.svg">
+                <div>
+                    <h3>GST Invoice & Bulk Discounts</h3>
+                    <small>Save up to 28% more with GST input credit and avail discounts on multi-unit purchases.</small>
+                </div>
+            </div>
+
+            <img src="https://m.media-amazon.com/images/I/416LUsi8c6L.svg" width="250px" height="90px" style="margin: auto;">
+
+            <div class="footer">
+                <small>Learn more about Amazon Business</small>
+                <img src="./images/direct-link (2).png" width="15px">
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright-section">
+        <small>Need help? Contact <span> business customer service</span>. Read our <span>conditions of use</span> and <span>privacy notice</span>.</small>
+        <small>&copy; 1996–2023, Amazon.com Inc. or its affiliates</small>
+    </div>
+
+
+</body>
+</html>
